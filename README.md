@@ -1,4 +1,4 @@
-> Desiged by **Damos & Kargadan Company**
+> Designed by **Damos & Kargadan Company**
 
 > Developed by **Ahmadreza Nozaeem**
 
