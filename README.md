@@ -2,14 +2,14 @@
 
 
 ### Damos/Kargadan Designs
-> **NOTE:** The following websites used to be online but the support team doesn't exist anymore so they had to get them down.
-- [2020 ATI Elevator](https://ami-hp.github.io/ati.elevator/)
-- [2020 Damos](https://ami-hp.github.io/damos/)
-- [2020 Noya Games](https://ami-hp.github.io/noya-games/)
-- [2021 Gooshiland](https://ami-hp.github.io/gooshiland/)
-- [2021 Dr. H](https://ami-hp.github.io/dr.h/)
-- [2021 Shana Studio](https://ami-hp.github.io/shana.studio/)
-- [2021 Amaj](https://amaj.in/) - online
+> **NOTE:** The "*" websites used to be online but the support team doesn't exist anymore so they had to get them down.
+- [2020 ATI Elevator](https://ami-hp.github.io/ati.elevator/)*
+- [2020 Damos](https://ami-hp.github.io/damos/)*
+- [2020 Noya Games](https://ami-hp.github.io/noya-games/)*
+- [2021 Gooshiland](https://ami-hp.github.io/gooshiland/)*
+- [2021 Dr. H](https://ami-hp.github.io/dr.h/)*
+- [2021 Shana Studio](https://ami-hp.github.io/shana.studio/)*
+- [2021 Amaj](https://amaj.in/)
 
 ### Admin Panels
 - [2023 Plain Admin RTL](https://ami-hp.github.io/adminpanel-plainadmin/)
