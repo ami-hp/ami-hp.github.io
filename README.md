@@ -8,6 +8,7 @@
 - [2020 Noya Games](https://ami-hp.github.io/noya-games/)
 - [2021 Gooshiland](https://ami-hp.github.io/gooshiland/)
 - [2021 Dr. H](https://ami-hp.github.io/dr.h/)
+- [2021 Shana Studio](https://ami-hp.github.io/shana.studio/)
 
 ### Admin Panels
 - [2023 Plain Admin RTL](https://ami-hp.github.io/adminpanel-plainadmin/)
