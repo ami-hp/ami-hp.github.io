@@ -1,7 +1,7 @@
 # Developed by **Ahmadreza Nozaeem**
 
 
-### Damos/Kargadan Websites
+### Damos/Kargadan Designs
 > **NOTE:** The following websites used to be online but the support team doesn't exist anymore so they had to get them down.
 - [2020 ATI Elevator](https://ami-hp.github.io/ati.elevator/)
 - [2020 Damos](https://ami-hp.github.io/damos/)
