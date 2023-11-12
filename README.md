@@ -1,6 +1,3 @@
-# Developed by **Ahmadreza Nozaeem**
-
-
 ### Damos/Kargadan Designs
 > **NOTE:** The "*" websites used to be online but the support team doesn't exist anymore so they had to get them down.
 - [2020 ATI Elevator](https://ami-hp.github.io/ati.elevator/)*
@@ -10,6 +7,9 @@
 - [2021 Dr. H](https://ami-hp.github.io/dr.h/)*
 - [2021 Shana Studio](https://ami-hp.github.io/shana.studio/)*
 - [2021 Amaj](https://amaj.in/)
+
+#### Other Collaborations
+- [2020 Apple Center](https://applecenter.ir/)
 
 ### Admin Panels
 - [2023 Plain Admin RTL](https://ami-hp.github.io/adminpanel-plainadmin/)
@@ -40,3 +40,6 @@ Tools
 ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
 ![Apache](https://img.shields.io/badge/apache-%23D42029.svg?style=for-the-badge&logo=apache&logoColor=white)
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+
+
+Developed by **Ahmadreza Nozaeem**
