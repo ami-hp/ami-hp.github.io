@@ -1,0 +1,33 @@
+{
+  "name": "ami-hp.github.io",
+  "version": "1.0.0",
+  "description": "ami's portfolio",
+  "main": "index.js",
+  "scripts": {
+    "watch:tw": "npx tailwindcss -i assets/css/tailwind.css -o assets/css/tailwind-build.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ami-hp/ami-hp.github.io.git"
+  },
+  "keywords": [
+    "iamami",
+    "ami",
+    "ami-hp",
+    "portfolio",
+    "web",
+    "developer"
+  ],
+  "author": "Ahmadreza Nozaeem",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ami-hp/ami-hp.github.io/issues"
+  },
+  "homepage": "https://github.com/ami-hp/ami-hp.github.io#readme",
+  "dependencies": {
+    "tailwindcss": "^3.4.0"
+  },
+  "devDependencies": {
+    "sass": "^1.69.6"
+  }
+}
