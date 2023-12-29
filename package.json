@@ -2,9 +2,10 @@
   "name": "ami-hp.github.io",
   "version": "1.0.0",
   "description": "ami's portfolio",
-  "main": "index.js",
+  "private" : true,
   "scripts": {
-    "watch:tw": "npx tailwindcss -i assets/css/tailwind.css -o assets/css/tailwind-build.css --watch"
+    "watch:tw": "npx tailwindcss -i src/css/tailwind.css -o src/css/tailwind-build.css --watch",
+    "build:wp": "webpack"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,8 @@
     "tailwindcss": "^3.4.0"
   },
   "devDependencies": {
-    "sass": "^1.69.6"
+    "sass": "^1.69.6",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
   }
 }

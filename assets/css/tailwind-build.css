@@ -647,25 +647,11 @@ video {
   width: 100%;
 }
 
-.bg-amber-300{
-  --tw-bg-opacity: 1;
-  background-color: rgb(252 211 77 / var(--tw-bg-opacity));
-}
-
 .bg-amber-100{
   --tw-bg-opacity: 1;
   background-color: rgb(254 243 199 / var(--tw-bg-opacity));
 }
 
-.font-sans{
-  font-family: "Teko", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
 .font-serif{
   font-family: "Gideon Roman", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-}
-
-.text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
