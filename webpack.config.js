@@ -5,7 +5,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
     mode: 'development', // or 'production' or 'none'
     entry: {
-        app: './assets/js/index.js',
+        index: './assets/js/index.js',
+        websites: './assets/js/websites.js',
     }, // default: ./src/index.js
     output: { // default: ./dist/main.js
         filename: '[name].[contenthash].bundle.js',
@@ -59,7 +60,15 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             title : 'Roocket App',
-            template : 'index.html'
+            template : './assets/views/index.html',
+            filename : 'index.html',
+            chunks : ['index']
+        }),
+        new HtmlWebpackPlugin({
+            title : 'iamami::websites',
+            template : './assets/views/websites.html',
+            filename : 'websites.html',
+            chunks : ['websites']
         }),
         new MiniCssExtractPlugin({
             filename : '[name].[contenthash].css'
