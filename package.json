@@ -7,7 +7,7 @@
     "watch:tw": "npx tailwindcss -i assets/css/tailwind.css -o assets/css/tailwind-build.css --watch",
     "watch:wp": "webpack --mode=development --watch",
     "build:wp": "webpack --mode=development",
-    "prod:wp": "webpack --mode=production"
+    "prod:wp": "webpack --config webpack.prod.config.js"
   },
   "repository": {
     "type": "git",
