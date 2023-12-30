@@ -7,22 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>iamami</title>
 
-    <link rel="stylesheet" type="text/css" href="assets/css/tailwind-build.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-
-
-
 <!--    <script src="https://cdn.tailwindcss.com"></script>-->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
 </head>
 
 <body class="bg-amber-100 font-serif">
 
-<div class="md">
-
-
-</div>
+<div class="md"></div>
 
 <textarea class="w-full h-96 hidden">
 ## Websites
@@ -74,17 +67,8 @@
   Developed by **Ahmadreza Nozaeem**
 </textarea>
 
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-<script>
-    let outputElm = document.querySelector('.md');
-    let textarea = document.querySelector('textarea');
 
-    textarea.addEventListener('input' , (e) => {
-        outputElm.innerHTML = marked.parse(e.target.value);
-    });
 
-    outputElm.innerHTML = marked.parse(document.querySelector('textarea').value);
-</script>
 </body>
 
 </html>
