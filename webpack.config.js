@@ -2,21 +2,15 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-module.exports = {
-    mode: 'development', // or 'production' or 'none'
-    entry: {
+
+const config = {
+    entry: { // default: ./src/index.js
         index: './assets/js/index.js',
         websites: './assets/js/websites.js',
-    }, // default: ./src/index.js
+    },
     output: { // default: ./dist/main.js
-        filename: '[name].[contenthash].bundle.js',
         path: path.resolve(__dirname, 'build'),
         clean: true,
-    },
-    devServer: {
-        contentBase : path.resolve(__dirname, 'build'),
-        index : 'index.html',
-        port : 9327
     },
     module: {
         rules: [
@@ -31,18 +25,6 @@ module.exports = {
                 }
             },
             {
-                test : /\.css$/,
-                use : [MiniCssExtractPlugin.loader , 'css-loader']
-            },
-            {
-                test : /\.s[ac]ss$/,
-                use : [
-                    MiniCssExtractPlugin.loader ,
-                    'css-loader' ,
-                    'sass-loader',
-                ]
-            },
-            {
                 test : /\.(png|jpe?g|gif)$/,
                 use : [
                     {
@@ -55,23 +37,72 @@ module.exports = {
                     }
                 ]
             },
+            {
+                test : /\.(woff|woff2|ttf|eot|otf)$/,
+                use : [
+                    {
+                        loader : 'file-loader',
+                        options : {
+                            publicPath : 'fonts',
+                            outputPath : 'fonts',
+                            name : '[name].[ext]'
+                        }
+                    }
+                ]
+            },
         ]
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title : 'Roocket App',
+            title : 'I Am AMI',
             template : './assets/views/index.html',
             filename : 'index.html',
             chunks : ['index']
         }),
         new HtmlWebpackPlugin({
-            title : 'iamami::websites',
+            title : 'AMI :: Websites',
             template : './assets/views/websites.html',
             filename : 'websites.html',
             chunks : ['websites']
         }),
-        new MiniCssExtractPlugin({
-            filename : '[name].[contenthash].css'
-        })
     ]
+}
+
+module.exports = (env , arg) => {
+
+    let isDevelopment = arg.mode === 'development';
+
+    if(isDevelopment) {
+        config.devServer = {
+            static: {
+                directory: path.join(__dirname, 'build'),
+            },
+            compress: true,
+            port : 9000
+        };
+    }
+
+    config.module.rules.push(...[
+        {
+            test : /\.css$/,
+            use : [isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader , 'css-loader']
+        },
+        {
+            test : /\.s[ac]ss$/,
+            use : [isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader , 'css-loader' , 'sass-loader']
+        },
+    ])
+
+
+    if(! isDevelopment) {
+        config.output.filename = '[name].[contenthash].js';
+
+        config.plugins.push(
+            new MiniCssExtractPlugin({
+                filename : '[name].[contenthash].css'
+            }),
+        )
+    }
+
+    return config;
 };

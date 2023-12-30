@@ -5,9 +5,9 @@
   "private": true,
   "scripts": {
     "watch:tw": "npx tailwindcss -i assets/css/tailwind.css -o assets/css/tailwind-build.css --watch",
-    "watch:wp": "webpack --mode=development --watch",
+    "watch:wp": "webpack-dev-server --mode=development",
     "build:wp": "webpack --mode=development",
-    "prod:wp": "webpack --config webpack.prod.config.js"
+    "prod:wp": "webpack --mode=production"
   },
   "repository": {
     "type": "git",
