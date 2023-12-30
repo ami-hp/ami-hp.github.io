@@ -12,6 +12,11 @@ module.exports = {
         path: path.resolve(__dirname, 'build'),
         clean: true,
     },
+    devServer: {
+        contentBase : path.resolve(__dirname, 'build'),
+        index : 'index.html',
+        port : 9327
+    },
     module: {
         rules: [
             {

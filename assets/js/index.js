@@ -2,7 +2,7 @@ import '../css/tailwind-build.css'
 import '../scss/main.scss'
 
 
-document.addEventListener('load' , function () {
+document.addEventListener('DOMContentLoaded' , function () {
 
     let outputElm = document.querySelector('.md');
     let textarea = document.querySelector('textarea');
