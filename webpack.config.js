@@ -1,7 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-
+// const ESLintPlugin = require('eslint-webpack-plugin');
 
 const config = {
     entry: { // default: ./src/index.js
@@ -71,6 +71,7 @@ const config = {
             filename : 'websites.html',
             chunks : ['websites']
         }),
+        // new ESLintPlugin({}),
     ]
 }
 
