@@ -1,8 +1,13 @@
 import '../css/tailwind-build.css'
 import '../scss/main.scss'
 
+import _ from 'lodash'
+
+
 
 document.addEventListener('DOMContentLoaded' , function () {
+
+console.log(_);
 
     let outputElm = document.querySelector('.md');
     let textarea = document.querySelector('textarea');

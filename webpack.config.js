@@ -12,6 +12,12 @@ const config = {
         path: path.resolve(__dirname, 'build'),
         clean: true,
     },
+    optimization : {
+        splitChunks : {
+            name: 'vendors',
+            chunks : 'all'
+        }
+    },
     module: {
         rules: [
             {

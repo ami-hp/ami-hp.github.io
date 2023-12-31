@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/ami-hp/ami-hp.github.io#readme",
   "dependencies": {
+    "lodash": "^4.17.21",
     "path": "^0.12.7",
     "tailwindcss": "^3.4.0"
   },
