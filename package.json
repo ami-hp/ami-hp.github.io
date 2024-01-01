@@ -29,7 +29,8 @@
   },
   "homepage": "https://github.com/ami-hp/ami-hp.github.io#readme",
   "dependencies": {
-    "lodash": "^4.17.21",
+    "@alpinejs/intersect": "^3.13.3",
+    "alpinejs": "^3.13.3",
     "path": "^0.12.7",
     "tailwindcss": "^3.4.0"
   },
@@ -48,9 +49,11 @@
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.6.0",
     "mini-css-extract-plugin": "^2.7.6",
+    "resolve-url-loader": "^5.0.0",
     "sass": "^1.69.6",
     "sass-loader": "^13.3.3",
     "style-loader": "^3.3.3",
+    "url-loader": "^4.1.1",
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"

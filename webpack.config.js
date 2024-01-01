@@ -21,6 +21,26 @@ const config = {
     module: {
         rules: [
             {
+                test: /\.(png|jpe?g|gif)$/i,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'images/[name].[ext]',
+                },
+            },
+            // {
+            //     test : /\.(woff|woff2|ttf|eot|otf)$/,
+            //     use : [
+            //         {
+            //             loader : 'file-loader',
+            //             options : {
+            //                 publicPath : 'fonts',
+            //                 outputPath : 'fonts',
+            //                 name : '[name].[ext]'
+            //             }
+            //         }
+            //     ]
+            // },
+            {
                 test: /\.m?js$/,
                 exclude: /node_modules/,
                 use: {
@@ -30,32 +50,7 @@ const config = {
                     }
                 }
             },
-            {
-                test : /\.(png|jpe?g|gif)$/,
-                use : [
-                    {
-                        loader : 'file-loader',
-                        options : {
-                            publicPath : 'images',
-                            outputPath : 'images',
-                            name : '[name].[ext]'
-                        }
-                    }
-                ]
-            },
-            {
-                test : /\.(woff|woff2|ttf|eot|otf)$/,
-                use : [
-                    {
-                        loader : 'file-loader',
-                        options : {
-                            publicPath : 'fonts',
-                            outputPath : 'fonts',
-                            name : '[name].[ext]'
-                        }
-                    }
-                ]
-            },
+
         ]
     },
     plugins: [
@@ -92,11 +87,19 @@ module.exports = (env , arg) => {
     config.module.rules.push(...[
         {
             test : /\.css$/,
-            use : [isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader , 'css-loader']
+            use : [
+                isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader ,
+                'css-loader',
+            ]
         },
         {
             test : /\.s[ac]ss$/,
-            use : [isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader , 'css-loader' , 'sass-loader']
+            use : [
+                isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader ,
+                'css-loader' ,
+                // 'resolve-url-loader',
+                'sass-loader',
+            ]
         },
     ])
 
