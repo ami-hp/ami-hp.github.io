@@ -3,13 +3,15 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 // const ESLintPlugin = require('eslint-webpack-plugin');
 
+const deploy_folder = 'docs';
+
 const config = {
     entry: { // default: ./src/index.js
         index: './assets/js/index.js',
         websites: './assets/js/websites.js',
     },
     output: { // default: ./dist/main.js
-        path: path.resolve(__dirname, 'build'),
+        path: path.resolve(__dirname, deploy_folder),
         clean: true,
     },
     optimization : {
@@ -77,7 +79,7 @@ module.exports = (env , arg) => {
     if(isDevelopment) {
         config.devServer = {
             static: {
-                directory: path.join(__dirname, 'build'),
+                directory: path.join(__dirname, deploy_folder),
             },
             compress: true,
             port : 9000
