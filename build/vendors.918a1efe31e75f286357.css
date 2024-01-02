@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;300;400;500;600;700;800;900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap');
-
+@import url(https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;300;400;500;600;700;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap);
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -1285,3 +1283,5 @@ video {
     line-height: 1;
   }
 }
+
+.h-star{position:relative;display:inline}.h-star:before{display:inline-block;content:"";background-image:url(ea0765b1683c954bf651.svg);background-size:cover;width:50px;height:50px;position:absolute;z-index:-1;left:-41px;top:-38px}.index .sec-head .bg-image{background-position:center center;background-size:cover;background-image:url(images/cieling..png)}.index .sec-about .avatar{background-position:center center;background-size:cover;background-image:url(images/avatar-statue..png);transition:all .5s ease}.index .sec-about .avatar:before{content:"";position:absolute;width:100px;height:100px;top:-50px;left:-50px;border:1px solid #fff}.index .sec-about .avatar:after{content:"";position:absolute;width:100px;height:100px;bottom:-50px;right:-50px;border:1px solid #fff}.index .sec-about .avatar:hover{background-image:url(images/avatar-1..png)}.index .sec-exp .image-damos{background-position:center center;background-size:cover;background-image:url(images/logo-ekar-damos..png)}.index .sec-exp .image-chap{background-position:center center;background-size:cover;background-image:url(images/logo-chap..png)}.index .sec-exp .image-eyc{background-position:center center;background-size:cover;background-image:url(images/logo-eyc..png)}.index .sec-skill .skill-img{background-position:center center;background-size:contain;background-repeat:no-repeat}.index .sec-skill .skill-img.laravel{background-image:url(9568a908c4cd762b92b6.svg)}.index .sec-skill .skill-img.php{background-image:url(a6e3d95ad3c6f3cf3770.svg)}.index .sec-skill .skill-img.rest{background-image:url(36e2091bc6ececeb44ea.svg)}.index .sec-skill .skill-img.bootstrap{background-image:url(540606baff29294ffef2.svg)}.index .sec-skill .skill-img.tailwind{background-image:url(94961c453029a166dccf.svg)}.index .sec-skill .skill-img.javascript{background-image:url(6db9513be7266d3f32f0.svg)}.index .sec-skill .skill-img.jquery{background-image:url(5c6a07df885b6d2a2447.svg)}.index .sec-skill .skill-img.sass{background-image:url(a8ea500769b919b5807f.svg)}.index .sec-skill .skill-img.webpack{background-image:url(fd6e3501dfd741315403.svg)}.index .sec-skill .skill-img.alpine{background-image:url(4e611822964aa973ea67.svg)}.index .sec-skill .skill-img.git{background-image:url(16fc0f83bc93840c1a9e.svg)}.index .sec-skill .skill-img.github{background-image:url(09cf86c467a1626de68c.svg)}
