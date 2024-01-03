@@ -1,6 +1,8 @@
 .h-star {
   position: relative;
-  display: inline;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   
   &:before {
     display: inline-block;
@@ -13,5 +15,17 @@
     z-index: -1;
     left: -41px;
     top: -38px;
+  }
+
+  &:after {
+    display: inline-block;
+    content : "";
+    width: 100px;
+    height: 200px;
+    border-radius: 100%;
+    position: absolute;
+    z-index: -1;
+    border: 1px solid wheat;
+    transform: skew(-45deg);
   }
 }

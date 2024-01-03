@@ -7,7 +7,7 @@
     "esl": "eslint ./assets/js",
     "watch:tw": "npx tailwindcss -i assets/css/tailwind.css -o assets/css/tailwind-build.css --watch",
     "watch:wp": "webpack-dev-server --mode=development",
-    "build:wp": "webpack --mode=development",
+    "build:wp": "webpack --mode=development --watch",
     "prod:wp": "webpack --mode=production"
   },
   "repository": {

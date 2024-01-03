@@ -1,6 +1,102 @@
+::selection {
+  color: #f8b076;
+  background: #22555d;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar:hover {
+  opacity: 1;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(171, 149, 119);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(138, 122, 96);
+}
+
+.scroll-trans::-webkit-scrollbar {
+  width: 1px;
+}
+.scroll-trans::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scroll-trans::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+.scroll-trans::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+}
+
+.bg-pattern {
+  background-size: 200px;
+}
+.bg-pattern.wave {
+  background-image: url("../img/patterns/wave.jpg");
+}
+.bg-pattern.square {
+  background-image: url("../img/patterns/sq.jpg");
+}
+.bg-pattern.circle {
+  background-image: url("../img/patterns/circle.jpg");
+}
+
+.skill-img {
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.skill-img.laravel {
+  background-image: url("../img/logo/laravel.svg");
+}
+.skill-img.php {
+  background-image: url("../img/logo/php.svg");
+}
+.skill-img.rest {
+  background-image: url("../img/logo/rest.svg");
+}
+.skill-img.bootstrap {
+  background-image: url("../img/logo/bs.svg");
+}
+.skill-img.tailwind {
+  background-image: url("../img/logo/tw.svg");
+}
+.skill-img.javascript {
+  background-image: url("../img/logo/js.svg");
+}
+.skill-img.jquery {
+  background-image: url("../img/logo/jq.svg");
+}
+.skill-img.sass {
+  background-image: url("../img/logo/sass.svg");
+}
+.skill-img.webpack {
+  background-image: url("../img/logo/wp.svg");
+}
+.skill-img.alpine {
+  background-image: url("../img/logo/alpinejs-2.svg");
+}
+.skill-img.git {
+  background-image: url("../img/logo/git.svg");
+}
+.skill-img.github {
+  background-image: url("../img/logo/gh.svg");
+}
+
 .h-star {
   position: relative;
-  display: inline;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 .h-star:before {
   display: inline-block;
@@ -13,6 +109,17 @@
   z-index: -1;
   left: -41px;
   top: -38px;
+}
+.h-star:after {
+  display: inline-block;
+  content: "";
+  width: 100px;
+  height: 200px;
+  border-radius: 100%;
+  position: absolute;
+  z-index: -1;
+  border: 1px solid wheat;
+  transform: skew(-45deg);
 }
 
 .index .sec-head .bg-image {
@@ -61,47 +168,6 @@
   background-position: center center;
   background-size: cover;
   background-image: url("../img/logo-eyc.png");
-}
-.index .sec-skill .skill-img {
-  background-position: center center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.index .sec-skill .skill-img.laravel {
-  background-image: url("../img/logo/laravel.svg");
-}
-.index .sec-skill .skill-img.php {
-  background-image: url("../img/logo/php.svg");
-}
-.index .sec-skill .skill-img.rest {
-  background-image: url("../img/logo/rest.svg");
-}
-.index .sec-skill .skill-img.bootstrap {
-  background-image: url("../img/logo/bs.svg");
-}
-.index .sec-skill .skill-img.tailwind {
-  background-image: url("../img/logo/tw.svg");
-}
-.index .sec-skill .skill-img.javascript {
-  background-image: url("../img/logo/js.svg");
-}
-.index .sec-skill .skill-img.jquery {
-  background-image: url("../img/logo/jq.svg");
-}
-.index .sec-skill .skill-img.sass {
-  background-image: url("../img/logo/sass.svg");
-}
-.index .sec-skill .skill-img.webpack {
-  background-image: url("../img/logo/wp.svg");
-}
-.index .sec-skill .skill-img.alpine {
-  background-image: url("../img/logo/alpinejs-2.svg");
-}
-.index .sec-skill .skill-img.git {
-  background-image: url("../img/logo/git.svg");
-}
-.index .sec-skill .skill-img.github {
-  background-image: url("../img/logo/gh.svg");
 }
 
 /*# sourceMappingURL=main.css.map */

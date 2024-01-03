@@ -60,49 +60,6 @@
   }
 
   .sec-skill {
-    .skill-img {
-      background-position: center center;
-      background-size: contain;
 
-      background-repeat: no-repeat;
-
-      &.laravel{
-        background-image: url("../img/logo/laravel.svg");
-      }
-      &.php{
-        background-image: url("../img/logo/php.svg");
-      }
-      &.rest{
-        background-image: url("../img/logo/rest.svg");
-      }
-      &.bootstrap{
-        background-image: url("../img/logo/bs.svg");
-      }
-      &.tailwind{
-        background-image: url("../img/logo/tw.svg");
-      }
-      &.javascript{
-        background-image: url("../img/logo/js.svg");
-      }
-      &.jquery{
-        background-image: url("../img/logo/jq.svg");
-      }
-      &.sass{
-        background-image: url("../img/logo/sass.svg");
-      }
-      &.webpack{
-        background-image: url("../img/logo/wp.svg");
-      }
-      &.alpine{
-        background-image: url("../img/logo/alpinejs-2.svg");
-      }
-      &.git{
-        background-image: url("../img/logo/git.svg");
-      }
-      &.github{
-        background-image: url("../img/logo/gh.svg");
-      }
-
-    }
   }
 }
