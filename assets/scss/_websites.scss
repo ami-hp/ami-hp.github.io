@@ -1,0 +1,49 @@
+
+.websites {
+  .work-img {
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    &.plainAdmin{
+      background-image: url("../img/snaps/plainadmin-rtl.png");
+    }
+    &.amaj{
+      background-image: url("../img/snaps/amaj.png");
+    }
+    &.appleCenter{
+      background-image: url("../img/snaps/applecenter.png");
+    }
+    &.shana{
+      background-image: url("../img/snaps/shana.png");
+    }
+    &.drh{
+      background-image: url("../img/snaps/drh.png");
+    }
+    &.gooshiland{
+      background-image: url("../img/snaps/gooshiland.png");
+    }
+    &.noya{
+      background-image: url("../img/snaps/noya.png");
+    }
+    &.damos{
+      background-image: url("../img/snaps/damos.png");
+    }
+    &.ati{
+      background-image: url("../img/snaps/ati.png");
+    }
+    &.eye{
+      background-image: url("../img/snaps/laravel-eye-banner.png");
+    }
+
+  }
+
+
+
+
+
+
+
+
+
+}

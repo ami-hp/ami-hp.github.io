@@ -169,5 +169,40 @@
   background-size: cover;
   background-image: url("../img/logo-eyc.png");
 }
+.websites .work-img {
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.websites .work-img.plainAdmin {
+  background-image: url("../img/snaps/plainadmin-rtl.png");
+}
+.websites .work-img.amaj {
+  background-image: url("../img/snaps/amaj.png");
+}
+.websites .work-img.appleCenter {
+  background-image: url("../img/snaps/applecenter.png");
+}
+.websites .work-img.shana {
+  background-image: url("../img/snaps/shana.png");
+}
+.websites .work-img.drh {
+  background-image: url("../img/snaps/drh.png");
+}
+.websites .work-img.gooshiland {
+  background-image: url("../img/snaps/gooshiland.png");
+}
+.websites .work-img.noya {
+  background-image: url("../img/snaps/noya.png");
+}
+.websites .work-img.damos {
+  background-image: url("../img/snaps/damos.png");
+}
+.websites .work-img.ati {
+  background-image: url("../img/snaps/ati.png");
+}
+.websites .work-img.eye {
+  background-image: url("../img/snaps/laravel-eye-banner.png");
+}
 
 /*# sourceMappingURL=main.css.map */
