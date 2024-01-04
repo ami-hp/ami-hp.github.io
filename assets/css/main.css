@@ -24,6 +24,10 @@
   background: rgb(138, 122, 96);
 }
 
+html, body {
+  overscroll-behavior: none;
+}
+
 .scroll-trans::-webkit-scrollbar {
   width: 1px;
 }
