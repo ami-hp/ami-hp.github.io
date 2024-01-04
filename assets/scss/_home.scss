@@ -60,6 +60,12 @@
   }
 
   .sec-skill {
+    .skill-img {
+      width: 50px;
 
+      @media #{$md} {
+        width: 100px;
+      }
+    }
   }
 }

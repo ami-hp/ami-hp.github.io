@@ -15,17 +15,32 @@
     z-index: -1;
     left: -41px;
     top: -38px;
+    transition: all 0.3s cubic-bezier(0.36, 0, 0.66, -0.56);
   }
 
   &:after {
     display: inline-block;
     content : "";
-    width: 100px;
-    height: 200px;
+    width: 75px;
+    height: 130px;
     border-radius: 100%;
     position: absolute;
     z-index: -1;
     border: 1px solid wheat;
+    transition: all 0.3s cubic-bezier(0.36, 0, 0.66, -0.56);
     transform: skew(-45deg);
+
+    @media #{$md} {
+      width: 100px;
+      height: 200px;
+    }
+  }
+  &:hover{
+    &:before {
+      transform: rotate(20deg);
+    }
+    &:after {
+      transform: skew(-50deg);
+    }
   }
 }

@@ -109,17 +109,31 @@
   z-index: -1;
   left: -41px;
   top: -38px;
+  transition: all 0.3s cubic-bezier(0.36, 0, 0.66, -0.56);
 }
 .h-star:after {
   display: inline-block;
   content: "";
-  width: 100px;
-  height: 200px;
+  width: 75px;
+  height: 130px;
   border-radius: 100%;
   position: absolute;
   z-index: -1;
   border: 1px solid wheat;
+  transition: all 0.3s cubic-bezier(0.36, 0, 0.66, -0.56);
   transform: skew(-45deg);
+}
+@media only screen and (min-width: 768px) {
+  .h-star:after {
+    width: 100px;
+    height: 200px;
+  }
+}
+.h-star:hover:before {
+  transform: rotate(20deg);
+}
+.h-star:hover:after {
+  transform: skew(-50deg);
 }
 
 .index .sec-head .bg-image {
@@ -169,6 +183,15 @@
   background-size: cover;
   background-image: url("../img/logo-eyc.png");
 }
+.index .sec-skill .skill-img {
+  width: 50px;
+}
+@media only screen and (min-width: 768px) {
+  .index .sec-skill .skill-img {
+    width: 100px;
+  }
+}
+
 .websites .work-img {
   background-position: center center;
   background-size: contain;

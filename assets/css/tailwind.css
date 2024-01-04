@@ -6,3 +6,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .title-section {
+        @apply text-center mb-28 text-5xl md:text-6xl text-white;
+    }
+    .icon-box {
+        @apply aspect-square rounded-md bg-white p-5;
+    }
+    .skill-img {
+        @apply bg-center bg-no-repeat bg-contain aspect-square;
+    }
+}
