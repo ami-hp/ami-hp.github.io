@@ -37,6 +37,9 @@
       &:hover {
         background-image: url("../img/avatar-1.png");
       }
+      &:active {
+        background-image: url("../img/avatar-2.png");
+      }
 
     }
   }

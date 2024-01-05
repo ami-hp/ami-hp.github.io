@@ -172,6 +172,9 @@ html, body {
 .index .sec-about .avatar:hover {
   background-image: url("../img/avatar-1.png");
 }
+.index .sec-about .avatar:active {
+  background-image: url("../img/avatar-2.png");
+}
 .index .sec-exp .image-damos {
   background-position: center center;
   background-size: cover;
