@@ -1,15 +1,8 @@
 {
   "name": "ami-hp.github.io",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "ami's portfolio",
   "private": true,
-  "scripts": {
-    "esl": "eslint ./assets/js",
-    "watch:tw": "npx tailwindcss -i assets/css/tailwind.css -o assets/css/tailwind-build.css --watch",
-    "watch:wp": "webpack-dev-server --mode=development",
-    "build:wp": "webpack --mode=development --watch",
-    "prod:wp": "webpack --mode=production"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ami-hp/ami-hp.github.io.git"
@@ -24,40 +17,24 @@
   ],
   "author": "Ahmadreza Nozaeem",
   "license": "ISC",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/ami-hp/ami-hp.github.io/issues"
   },
   "homepage": "https://github.com/ami-hp/ami-hp.github.io#readme",
+  "scripts": {
+    "watch:tw": "npx tailwindcss -i app/assets/css/tailwind.css -o app/assets/css/tailwind-build.css --watch",
+    "dev": "vite",
+    "build": "vite build --emptyOutDir",
+    "preview": "vite preview"
+  },
   "dependencies": {
     "@alpinejs/intersect": "^3.13.3",
-    "alpinejs": "^3.13.3",
-    "gsap": "^3.12.4",
-    "path": "^0.12.7",
-    "tailwindcss": "^3.4.0"
+    "alpinejs": "^3.13.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.23.6",
-    "@babel/preset-env": "^7.23.6",
-    "babel-loader": "^9.1.3",
-    "clean-webpack-plugin": "^4.0.0",
-    "css-loader": "^6.8.1",
-    "eslint": "^8.56.0",
-    "eslint-config-standard": "^17.1.0",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-n": "^16.6.0",
-    "eslint-plugin-promise": "^6.1.1",
-    "eslint-webpack-plugin": "^4.0.1",
-    "file-loader": "^6.2.0",
-    "html-loader": "^4.2.0",
-    "html-webpack-plugin": "^5.6.0",
-    "mini-css-extract-plugin": "^2.7.6",
-    "resolve-url-loader": "^5.0.0",
     "sass": "^1.69.6",
-    "sass-loader": "^13.3.3",
-    "style-loader": "^3.3.3",
-    "url-loader": "^4.1.1",
-    "webpack": "^5.89.0",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.1"
+    "tailwindcss": "^3.4.15",
+    "vite": "^5.4.11"
   }
 }
