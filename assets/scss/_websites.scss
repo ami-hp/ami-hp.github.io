@@ -5,6 +5,9 @@
     background-size: contain;
     background-repeat: no-repeat;
 
+    &.asremobile {
+      background-image: url("../img/snaps/asremobile.png");
+    }
     &.plainAdmin{
       background-image: url("../img/snaps/plainadmin-rtl.png");
     }
