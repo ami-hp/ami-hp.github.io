@@ -1,0 +1,59 @@
+$shirin : url("../img/designs/bs-shirin.png");
+$araz : url("../img/designs/bs-araz.png");
+$araz2 : url("../img/designs/bs-araz2.png");
+$armaqan : url("../img/designs/bs-armaqan.png");
+$tonup : url("../img/designs/bs-tonup.png");
+$touch : url("../img/designs/bs-touch.png");
+$pinon : url("../img/designs/bs-pinon.png");
+$iranteb : url("../img/designs/bs-iranteb.png");
+
+
+.designs {
+  .work-img {
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    &.bs-shirin{
+      background-image: $shirin;
+    }
+
+    &.bs-araz{
+      background-image: $araz;
+    }
+
+    &.bs-araz2{
+      background-image: $araz2;
+    }
+
+    &.bs-armaqan{
+      background-image: $armaqan;
+    }
+
+    &.bs-tonup{
+      background-image: $tonup;
+    }
+
+    &.bs-touch{
+      background-image: $touch;
+    }
+
+    &.bs-pinon{
+      background-image: $pinon;
+    }
+
+    &.bs-iranteb{
+      background-image: $iranteb;
+    }
+
+  }
+
+
+
+
+
+
+
+
+
+}
