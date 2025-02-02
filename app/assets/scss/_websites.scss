@@ -5,6 +5,9 @@
     background-size: contain;
     background-repeat: no-repeat;
 
+    &.mikhak {
+      background-image: url("../img/snaps/mikhak.png");
+    }
     &.asremobile {
       background-image: url("../img/snaps/asremobile.png");
     }
@@ -38,15 +41,5 @@
     &.eye{
       background-image: url("../img/snaps/laravel-eye-banner.png");
     }
-
   }
-
-
-
-
-
-
-
-
-
 }

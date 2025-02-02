@@ -69,6 +69,9 @@ html, body {
   background-size: contain;
   background-repeat: no-repeat;
 
+  &.angular{
+    background-image: url("../img/logo/angular.svg");
+  }
   &.laravel{
     background-image: url("../img/logo/laravel.svg");
   }
